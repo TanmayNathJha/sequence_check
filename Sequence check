@@ -1,5 +1,6 @@
-n=int(input("Power/Sequence number:"))
-m=int(input("Number of terms per sequence:"))
+import random
+n=random.randint(1,100)
+m=random.randint(1,100)
 summation_list=[]
 other_seq=[]
 for k in range(m):
@@ -8,17 +9,21 @@ for l in range(n):
     other_seq.append(0)
 for i in range(n):
     for j in range(m):
-        num=int(input("Number:"))
+        num=random.randint(1,1000000000000000000000000)
         summation_list[j]=summation_list[j]*num
         other_seq[i]+= num**n
         
 x=1
 for number in other_seq:
     x = x*number
-print (x)
+
 y=0
 for numero in summation_list:
     y+=numero
-print (y**n)
+
 if x>(y**n):
     print('true')
+print (x) 
+print (y**n)
+        
+        
