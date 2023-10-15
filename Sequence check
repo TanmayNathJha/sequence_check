@@ -1,12 +1,15 @@
 import random
+
 n=random.randint(1,100)
 m=random.randint(1,100)
 summation_list=[]
 other_seq=[]
 for k in range(m):
     summation_list.append(1)
+    
 for l in range(n):
     other_seq.append(0)
+    
 for i in range(n):
     for j in range(m):
         num=random.randint(1,1000000000000000000000000)
@@ -23,7 +26,8 @@ for numero in summation_list:
 
 if x>(y**n):
     print('true')
-print (x) 
-print (y**n)
+else:
+    print('false')
+
         
         
